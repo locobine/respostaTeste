@@ -1,0 +1,30 @@
+MainWindow
+  id: buttonjumpMain
+  size: 245 285
+  @onEscape: modules.buttonjump.closing()
+
+  TabBar
+    id: allTabs
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+
+  Panel
+    id: optionsTabContent
+    anchors.top: allTabs.top
+    anchors.left: allTabs.left
+    anchors.right: allTabs.right
+    anchors.bottom: allTabs.bottom
+    margin-top: 20
+    margin-bottom: 20
+
+  Button
+    id: Jump
+    !text: tr('Jump')
+    width: 40
+    anchors.right: parent.right
+    anchors.top: parent.top
+    @onClick: modules.buttonjump.action()
+
+

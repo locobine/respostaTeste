@@ -1,0 +1,14 @@
+Module
+  name: buttonjump
+  description: Open a ui with a button named Jump that resets random position after being clicked
+  author: Angelo Almeida
+  website: -
+  version: 1
+  
+  autoload: true
+  autoload-priority: 1000
+  sandboxed: true
+  dependencies: [ game_interface ]
+  scripts: [ buttonjump ]
+  @onLoad: init()
+  @onUnload: terminate()
